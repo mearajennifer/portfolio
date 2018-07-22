@@ -6,7 +6,7 @@ from flask_debugtoolbar import DebugToolbarExtension
 import os
 
 # Create app
-app = Flask(__name__)
+application = Flask(__name__)
 
 # Required to use Flask sessions and the debug toolbar
 app.secret_key = os.environ['FLASK_SECRET_KEY']
@@ -16,7 +16,8 @@ app.jinja_env.undefined = StrictUndefined
 
 
 # this is the route to the homepage
-@app.route('/')
+@application.route('/')
+@application.route('/index')
 def index():
     """Homepage."""
     return render_template("homepage.html")
@@ -30,4 +31,4 @@ if __name__ == "__main__":
 
     # DebugToolbarExtension(app)
 
-    app.run()
+    application.run()
