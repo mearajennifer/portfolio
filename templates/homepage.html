@@ -1,42 +1,88 @@
 {% extends 'base.html' %}
 
 {% block content %}
+  
+  <!-- Navigation bar -->
+  <nav class="navbar fixed-top navbar-expand-lg bg-light">
 
+    <a class="navbar-brand" href="#intro"><img id="nav-logo"src="/static/img/jm-logo.png"></a>
+
+    <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#tech">Tech</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#experience">Experience</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#projects">Projects</a>
+        </li>
+      </ul>
+    </div>
+
+  </nav>
+  
   <main role="main" class="container">
-    
-    <div style="background:#f55e61" class="jumbotron top">
+    <br><br>
+
+    <!-- Intro -->
+    <div style="background:#f55e61" class="jumbotron top" id="intro">
       <h1 class="display-4">Jennifer Meara</h1>
       
       <p class="lead"></p>
       
       <hr class="my-4">
       
-      <p>Software Engineer. Everyday Adventurer.</p>
+      <p>Software engineer <i class="fas fa-circle"></i> Project manager <i class="fas fa-circle"></i> Everyday adventurer</p>
 
         <a href="https://github.com/mearajennifer" target="blank"><i class="fab fa-github"></i></a>
         <a href="https://twitter.com/mearajennifer" target="blank"><i class="fab fa-twitter"></i></a>
         <a href="https://www.linkedin.com/in/mearajl" target="blank"><i class="fab fa-linkedin-in"></i></a>
         <a class="send" href="mailto:&#106;&#101;&#110;&#110;&#105;&#102;&#101;&#114;&#064;&#106;&#109;&#101;&#097;&#114;&#097;&#046;&#099;&#111;&#109;"><i class="fas fa-at"></i></a>
-
     </div>
 
-    <div style="background:#fff" class="jumbotron bottom">
-
-        <h4>About</h4>
-
+    <!-- About section -->
+    <div style="background:#fff" class="jumbotron" id="about">
+        <h3>About</h3>
         <hr class="my-4">
 
-        <p>Before studying at Hackbright Academy, Jennifer worked for 15 years in marketing and project management. She started as a photo and studio coordinator directing teams and increasing efficiency of projects. Then, she managed multi-faceted marketing campaigns and social media channels for Kaiser Permanente. She always enjoyed building out new processes, as well as learning about the technical aspects of building websites.</p>
+        <p>Before studying at Hackbright Academy, Jennifer worked for 10+ years in marketing and project management. She started as a photo and studio coordinator directing teams and increasing efficiency of projects. Then, she managed multi-faceted marketing campaigns and social media channels for Kaiser Permanente. She always enjoyed building out new processes, as well as learning about the technical aspects of building websites.</p>
 
         <p>Despite a successful career, she found a love for coding and decided to embark on a new career in software engineering. She’s looking forward to work that plays to her strengths in solving problems, building new processes/programs or improving existing ones.
-        </p><br><br>
+        </p>
+    </div>
 
-        <h4>Projects</h4>
+    <!-- Technical skills section -->
+    <div style="background:#fff" class="jumbotron" id="tech">
+      <h3>Technical Skills</h3>
+      <hr class="my-4">
+      <p>Coming soon</p>
+    </div>
 
-        <hr class="my-4">
+    <!-- Experience section -->
+    <div style="background:#fff" class="jumbotron" id="experience">
+      <h3>Experience</h3>
+      <hr class="my-4">
+      <p>Coming soon</p>
+    </div>
 
-        <p>Coming soon</p>
-    
+    <!-- Projects section -->
+    <div style="background:#fff" class="jumbotron" id="projects">
+      <h3>Projects</h3>
+      <hr class="my-4">
+      <p>Coming soon</p>
     </div>
 
 </main>
