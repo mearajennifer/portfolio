@@ -12,6 +12,7 @@ body {
 
 nav a {
     color: #273c42;
+    font-family: 'Lato', sans-serif;
 }
 
 nav a:hover {
