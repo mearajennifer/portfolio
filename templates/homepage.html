@@ -3,7 +3,7 @@
 {% block content %}
   
   <!-- Navigation bar -->
-  <nav class="navbar fixed-top navbar-expand-lg bg-light">
+  <nav class="navbar fixed-top navbar-expand-lg bg-light col-12">
 
     <a class="navbar-brand" href="#intro"><img id="nav-logo"src="/static/img/jm-logo-sq.png"></a>
 
@@ -33,65 +33,70 @@
     </div>
 
   </nav>
-  
-  <main role="main" class="container">
-    <br><br>
+  <br><br>
 
-    <!-- Intro -->
-    <div style="background:#f55e61" class="jumbotron top" id="intro">
-      <h1 class="display-4">Jennifer Meara</h1>
-      
-      <p class="lead"></p>
-      
-      <hr class="my-4">
-      
-      <p>Software engineer <i class="fas fa-circle"></i> Project manager <i class="fas fa-circle"></i> Everyday adventurer</p>
+  <!-- Intro -->
+  <div style="background:rgba(245, 94, 97, 1)" class="jumbotron top" id="intro">
+      <div class="container col-8">
+
+        <h1 class="display-4">Jennifer Meara</h1>
+           
+        <hr class="my-4">
+        
+        <p><i class="fas fa-circle"></i> Software engineer <i class="fas fa-circle"></i> Project manager <i class="fas fa-circle"></i> Everyday adventurer <i class="fas fa-circle"></i></p>
 
         <a href="https://github.com/mearajennifer" target="blank"><i class="fab fa-github"></i></a>
         <a href="https://twitter.com/mearajennifer" target="blank"><i class="fab fa-twitter"></i></a>
         <a href="https://www.linkedin.com/in/mearajl" target="blank"><i class="fab fa-linkedin-in"></i></a>
         <a class="send" href="mailto:&#106;&#101;&#110;&#110;&#105;&#102;&#101;&#114;&#064;&#106;&#109;&#101;&#097;&#114;&#097;&#046;&#099;&#111;&#109;"><i class="fas fa-at"></i></a>
+      </div>
+
     </div>
 
     <!-- About section -->
-    <div style="background:#fff" class="jumbotron" id="about">
-        <h3>About</h3>
-        <hr class="my-4">
+    <div style="background:rgba(255, 255, 255, .8)" class="jumbotron" id="about">
+        <div class="container col-8">
+          <h3>About</h3>
+          <hr class="my-4">
 
-        <p>Before studying at Hackbright Academy, Jennifer worked for 10+ years in marketing and project management. She started as a photo and studio coordinator directing teams and increasing efficiency of projects. Then, she managed multi-faceted marketing campaigns and social media channels for Kaiser Permanente. She always enjoyed building out new processes, as well as learning about the technical aspects of building websites.</p>
+          <p>Before studying at Hackbright Academy, Jennifer worked for 10+ years in marketing and project management. She started as a photo and studio coordinator directing teams and increasing efficiency of projects. Then, she managed multi-faceted marketing campaigns and social media channels for Kaiser Permanente. She always enjoyed building out new processes, as well as learning about the technical aspects of building websites.</p>
 
-        <p>Despite a successful career, she found a love for coding and decided to embark on a new career in software engineering. She’s looking forward to work that plays to her strengths in solving problems, building new processes/programs or improving existing ones.
-        </p>
+          <p>Despite a successful career, she found a love for coding and decided to embark on a new career in software engineering. She’s looking forward to work that plays to her strengths in solving problems, building new processes/programs or improving existing ones.
+          </p>
+        </div>
     </div>
 
     <!-- Technical skills section -->
-    <div style="background:#fff" class="jumbotron" id="tech">
-      <h3>Technical Skills</h3>
-      <hr class="my-4">
-      <p>Coming soon</p>
+    <div style="background:rgba(255, 255, 255, .5)" class="jumbotron" id="tech">
+      <div class="container col-8">
+        <h3>Technical Skills</h3>
+        <br><br><br><br><br><br><br><br>
+      </div>
     </div>
 
     <!-- Experience section -->
-    <div style="background:#fff" class="jumbotron" id="experience">
-      <h3>Experience</h3>
-      <hr class="my-4">
-      <p>Coming soon</p>
+    <div style="background:rgba(255, 255, 255, .8)" class="jumbotron" id="experience">
+      <div class="container col-8">
+        <h3>Experience</h3>
+        <br><br><br><br><br><br><br><br>
+      </div>
     </div>
 
     <!-- Projects section -->
-    <div style="background:#fff" class="jumbotron" id="projects">
-      <h3>Projects</h3>
-      <hr class="my-4">
-      <p>Coming soon</p>
+    <div style="background:rgba(255, 255, 255, .5)" class="jumbotron" id="projects">
+      <div class="container col-8">
+        <h3>Projects</h3>
+        <br><br><br><br><br><br><br><br>
+      </div>
     </div>
 
-</main>
-
+<!-- js for address -->
 <style>
   $('a.send').on('click', function(){
       var href = $(this).attr('href');
       $(this).attr('href', href.replace('badmail.', ''));
   });
+
 </style>
 
 {% endblock %}
