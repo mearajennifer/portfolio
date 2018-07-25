@@ -1,46 +1,12 @@
 {% extends 'base.html' %}
 
 {% block content %}
-  
-  <!-- Navigation bar -->
-  <nav class="navbar fixed-top navbar-expand-lg bg-light col-12">
-
-    <a class="navbar-brand" href="#intro"><img id="nav-logo"src="/static/img/jm-logo-sq.png"></a>
-
-    <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        
-        <li class="nav-item">
-          <a class="nav-link" href="#about">About</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="#tech">Tech</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="#experience">Experience</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="#projects">Projects</a>
-        </li>
-      </ul>
-    </div>
-
-  </nav>
-  <br><br>
 
   <!-- Intro -->
   <div style="background:rgba(245, 94, 97, 1)" class="jumbotron top" id="intro">
       <div class="container col-8">
 
         <h1 class="display-4">Jennifer Meara</h1>
-           
         <hr class="my-4">
         
         <p><i class="fas fa-circle"></i> Software engineer <i class="fas fa-circle"></i> Project manager <i class="fas fa-circle"></i> Everyday adventurer <i class="fas fa-circle"></i></p>
@@ -56,6 +22,7 @@
     <!-- About section -->
     <div style="background:rgba(255, 255, 255, .8)" class="jumbotron" id="about">
         <div class="container col-8">
+
           <h3>About</h3>
           <hr class="my-4">
 
@@ -63,13 +30,15 @@
 
           <p>Despite a successful career, she found a love for coding and decided to embark on a new career in software engineering. She’s looking forward to work that plays to her strengths in solving problems, building new processes/programs or improving existing ones.
           </p>
+
         </div>
     </div>
 
     <!-- Technical skills section -->
-    <div style="background:rgba(255, 255, 255, .5)" class="jumbotron" id="tech">
+    <div style="background:rgba(255, 255, 255, .8)" class="jumbotron" id="tech">
       <div class="container col-8">
         <h3>Technical Skills</h3>
+        <hr class="my-4">
         <br><br><br><br><br><br><br><br>
       </div>
     </div>
@@ -77,16 +46,158 @@
     <!-- Experience section -->
     <div style="background:rgba(255, 255, 255, .8)" class="jumbotron" id="experience">
       <div class="container col-8">
+
         <h3>Experience</h3>
-        <br><br><br><br><br><br><br><br>
+        <hr class="my-4">
+
+        <!-- Timeline -->
+        <ul class="timeline">
+
+        <!-- Item 1 -->
+        <li>
+          <div class="timeline-badge"><i class="fas fa-graduation-cap"></i></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title">Hackbright Academy</h4>
+            </div>
+            <div class="timeline-body">
+              <p>12-week intensive software engineering course for women.</p>
+            </div>
+          </div>
+        </li>
+
+        <!-- Item 2 -->
+        <li class="timeline-inverted">
+          <div class="timeline-badge"><i class="fas fa-mobile-alt"></i></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title">Social Media PM</h4>
+            </div>
+            <div class="timeline-body">
+              <p>Kaiser Permanente national social media channels advertising, brand
+                advocacy program lead, training lead for regional CMS tools.</p>
+            </div>
+          </div>
+        </li>
+
+        <!-- Item 3 -->
+        <li>
+          <div class="timeline-badge"><i class="fas fa-briefcase"></i></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title">Marketing Project Manager</h4>
+            </div>
+            <div class="timeline-body">
+              <p>Managed yearly Open Enrollment (OE) campaign in 3 languages and multiple platforms (digital, print, video) to acquire and retain employer-sponsored members (80% of national sales).</p>
+            </div>
+          </div>
+        </li>
+
+        <!-- Item 4 -->
+        <!-- <li class="timeline-inverted">
+          <div class="timeline-badge"><i class="fas fa-briefcase"></i></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title">Marketing Project Manager I</h4>
+            </div>
+            <div class="timeline-body">
+              <p>Mussum ipsum cacilds, vidis litro abertis.</p>
+            </div>
+          </div>
+        </li> -->
+
+        <!-- Item 5 -->
+        <!-- <li>
+          <div class="timeline-badge"><i class="fas fa-briefcase"></i></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title">Marketing Project Coordinator</h4>
+            </div>
+            <div class="timeline-body">
+              <p>Mussum ipsum cacilds, vidis litro abertis.</p>
+            </div>
+          </div>
+        </li> -->
+
+        <!-- Item 6 -->
+        <li class="timeline-inverted">
+          <div class="timeline-badge"><i class="fas fa-briefcase"></i></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title">Studio Coordinator</h4>
+            </div>
+            <div class="timeline-body">
+              <p>Responsible for scheduling, producing and on-time delivery of all work completed by creative team.</p>
+            </div>
+          </div>
+        </li>
+
+        <!-- Item 7 -->
+        <li>
+          <div class="timeline-badge"><i class="fas fa-briefcase"></i></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title">Photography Coordinator</h4>
+            </div>
+            <div class="timeline-body">
+              <p>Increased photo shoot efficiency resulting in 60% more shots per day and came in at or below company budget.</p>
+            </div>
+          </div>
+        </li>
+
+        <!-- Item 8 -->
+        <li class="timeline-inverted">
+          <div class="timeline-badge"><i class="fas fa-graduation-cap"></i></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title">The Ohio State University</h4>
+            </div>
+            <div class="timeline-body">
+              <p>BA: Visual/Media Arts, Minor: Film Studies</p>
+            </div>
+          </div>
+        </li>
+
+      </ul>
+      <!-- End timeline -->
+
       </div>
     </div>
 
     <!-- Projects section -->
-    <div style="background:rgba(255, 255, 255, .5)" class="jumbotron" id="projects">
-      <div class="container col-8">
+    <div style="background:rgba(255, 255, 255, .8)" class="jumbotron" id="projects">
+      <div class="container col-10">
+
         <h3>Projects</h3>
-        <br><br><br><br><br><br><br><br>
+        <hr class="my-4">
+
+        <div class="row">
+
+          <div class="card mx-auto" style="width: 18rem;">
+          <img class="card-img-top" src="/static/img/no_img.png" alt="no image">
+            <div class="card-body">
+              <h5 class="card-title">The Job Hunt</h5>
+              <p class="card-text">Helps job seekers track applications.</p>
+            </div>
+          </div>
+
+          <div class="card mx-auto" style="width: 18rem;">
+          <img class="card-img-top" src="/static/img/no_img.png" alt="no image">
+            <div class="card-body">
+              <h5 class="card-title">Judgmental Eye</h5>
+              <p class="card-text">Rate a movie, and be judged!</p>
+            </div>
+          </div>
+
+          <div class="card mx-auto" style="width: 18rem;">
+          <img class="card-img-top" src="/static/img/no_img.png" alt="no image">
+            <div class="card-body">
+              <h5 class="card-title">WhiskerWorld</h5>
+              <p class="card-text">Terminal-based adventure game</p>
+            </div>
+          </div>
+
+        </div>
       </div>
     </div>
 
