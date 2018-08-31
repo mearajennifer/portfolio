@@ -19,7 +19,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #f57362;
+    color: #f5998d;
 }
 
 
@@ -71,7 +71,7 @@ a:hover {
 }
 
 h2 {
-    color: #f57362;
+    color: #f5998d;
     font-family: 'Playfair Display', serif;
     font-weight: 700;
     padding-top: 0;
@@ -111,7 +111,7 @@ footer {
     text-align: center;
     font-family: 'Playfair Display', serif;
     color: white;
-    background-color: #f57362;
+    background-color: #f5998d;
     padding-top: 1.8rem;
     padding-bottom: 1.5rem;
 }
@@ -131,7 +131,7 @@ footer {
         position: absolute;
         content: " ";
         width: 3px;
-        background-color: #f57362;
+        background-color: #f5998d;
         left: 50%;
         margin-left: -1.5px;
     }
@@ -208,7 +208,7 @@ footer {
             top: 16px;
             left: 50%;
             margin-left: -25px;
-            background-color: #f57362;
+            background-color: #f5998d;
             z-index: 100;
             border-top-right-radius: 50%;
             border-top-left-radius: 50%;
