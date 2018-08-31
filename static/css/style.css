@@ -19,7 +19,7 @@ nav a {
 }
 
 nav a:hover {
-    color: rgba(245, 94, 97, 1);
+    color: #f57362;
 }
 
 
@@ -65,11 +65,16 @@ a:hover {
 
 
 /* ******************** ROWS ******************** */
+.jumbotron {
+    margin-top: 5%;
+    padding-top: 4%;
+}
+
 h2 {
-    color: rgba(245, 94, 97, 1);
+    color: #f57362;
     font-family: 'Playfair Display', serif;
     font-weight: 700;
-    padding-top: 5%;
+    padding-top: 0;
 }
 
 p {
@@ -106,7 +111,7 @@ footer {
     text-align: center;
     font-family: 'Playfair Display', serif;
     color: white;
-    background-color: rgba(245, 94, 97, 1);
+    background-color: #f57362;
     padding-top: 1.8rem;
     padding-bottom: 1.5rem;
 }
@@ -126,7 +131,7 @@ footer {
         position: absolute;
         content: " ";
         width: 3px;
-        background-color: rgba(245, 94, 97, 1);
+        background-color: #f57362;
         left: 50%;
         margin-left: -1.5px;
     }
@@ -203,7 +208,7 @@ footer {
             top: 16px;
             left: 50%;
             margin-left: -25px;
-            background-color: rgba(245, 94, 97, 1);
+            background-color: #f57362;
             z-index: 100;
             border-top-right-radius: 50%;
             border-top-left-radius: 50%;
